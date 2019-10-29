@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>阴影</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <style>
+      div{
+        width: 200px;
+        height: 80px;
+        text-align: center;
+        line-height: 80px;
+        background: rgb(201, 125, 26);
+        margin: 100px auto;
+        color: #fff
+      }
+      .shadow-bottom{
+        box-shadow: 0 5px 5px rgb(124, 74, 8)
+      }
+      .shadow-slide {
+        box-shadow: 5px 0 5px rgb(124, 74, 8), -5px 0 5px rgb(124, 74, 8)
+      }
+      .shadow-right-top{
+        box-shadow: 0 -5px 5px rgb(124, 74, 8),5px 0 5px rgb(124, 74, 8)
+      }
+    </style>
+</head>
+<body>
+  <div class="shadow-bottom">单边阴影</div>
+  <div class="shadow-slide">左右阴影</div>
+  <div class="shadow-right-top">右上角阴影</div>
+</body>
+</html>

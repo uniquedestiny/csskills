@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>切角</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <style>
+      div{
+        width: 200px;
+        height: 80px;
+        text-align: center;
+        line-height: 80px;
+        margin: 100px auto;
+        color: #fff
+      }
+      /*
+        知识点：
+        linear-gradient 每加一个为累加一层
+        
+        background-size: 
+        单角一层不用
+        双角 50% 100%; 
+        三角 50% 50%; （切角宽度 transparent 0）
+        全角 50% 50%;
+      */
+      .corner-cut1{
+        background: rgb(201, 125, 26); /*compatibility*/
+        background: linear-gradient(-45deg, transparent 15px, rgb(201, 125, 26) 0);
+      }
+      .corner-cut-all{
+        background: rgb(201, 125, 26); /*compatibility*/
+        background:
+        linear-gradient(135deg, transparent 15px, rgb(201, 125, 26) 0) top left,
+        linear-gradient(225deg, transparent 15px, rgb(201, 125, 26) 0) top right,
+        linear-gradient(45deg, transparent 15px, rgb(201, 125, 26) 0) bottom left,
+        linear-gradient(-45deg, transparent 15px, rgb(201, 125, 26) 0) bottom right;
+        /* transparent 15px 越大切角越大 */
+        /* 四切角 关系为90deg */
+        /* 切角读书以上下边为起点 默认90deg */
+        background-size: 50% 50%; /* 类设置图片尺寸 使每一渐变层只占元素的1/2 从而不覆盖transparent的角度 */
+        background-repeat: no-repeat;
+      }
+    </style>
+</head>
+<body>
+  <div class="corner-cut1">切角</div>
+  <div class="corner-cut-all">全切角</div>
+</body>
+</html>

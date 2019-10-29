@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>折角</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <style>
+      div{
+        width: 200px;
+        height: 80px;
+        text-align: center;
+        line-height: 80px;
+        margin: 100px auto;
+        color: #fff
+      }
+      .corner-cut1{
+        background: #58a; /* 优雅降级 */
+        background:
+        linear-gradient(-135deg, transparent 50%, rgba(0,0,0,.4) 0) no-repeat 100% 0 / 30px 30px,
+        linear-gradient(-135deg, transparent 20px, #58a 0);
+      }
+    </style>
+</head>
+<body>
+  <div class="corner-cut1">折角</div>
+</body>
+</html>
