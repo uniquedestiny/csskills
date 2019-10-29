@@ -1,11 +1,11 @@
 (function(){
   // 列表
   const demoList = [
-    {name: '毛玻璃', src: './blurred-glass.html', actived: 1},
-    {name: '折角', src: './dog-ear.html'},
-    {name: '阴影', src: './border-shadow.html'},
-    {name: '内圆角', src: './inner-angle.html'},
-    {name: '切角', src: './corner-cut.html'},
+    {name: '毛玻璃', src: './html/blurred-glass.html', actived: 1},
+    {name: '折角', src: './html/dog-ear.html'},
+    {name: '阴影', src: './html/border-shadow.html'},
+    {name: '内圆角', src: './html/inner-angle.html'},
+    {name: '切角', src: './html/corner-cut.html'},
   ]
   // 渲染
   demoCreate()
